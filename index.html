@@ -23,7 +23,8 @@
         <!--Logo-->
          <a href="#" class="brand">BenF hub</a>
       </div>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
+        <a href="#" class="link" id="closebtn" onclick="closeNav()">&times;</a>
       <a class="link" href="#">Home</a>
       <a class="link" href="#">
         Categories</a>
@@ -36,30 +37,41 @@
     <div class="nav-bar right">
       <div class="search">
         <form class="search-form" action="" method="get">
-         <span class="search-icon">
-          <i class="fas fa-search"></i>
+          <a href="search.html">
+         <span class="search-icon action" >
+          <i class="fas fa-search" id="searchbtn"></i>
          </span>
-          <input type="search" placeholder="Search">
+          </a>
         </form>
       </div>
       <div class="actions">
-        <span class="action"><i class="fas fa-shopping-cart"></i><!--icon--></span>
+        <span class="action"><i class="fas fa-shopping-cart"></i></span>
         <span class="action">
           <a href="#">
        <i class="fas fa-user"></i>
         </a>
         </span>
+        
+        <span class="action" id="opennav" onclick="openNav()">
+          <i class="fas fa-bars"></i>
+        </span>
       </div>
     </div>
   </nav>
 </header>
+
+
   
 <!-- MAIN CONTAINER SECTION-->
 
 <div class="container">
   <section id="hero">
     <div class="hero-card">
-      <img src="images (3).jpeg" alt="images/profile-image.jpg">
+  <video width="600" height="400" autoplay loop muted playsinline>
+    <source src="a69f1748e827e8ff13102a84cd092883~2.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
     </div>
     <div class="hero-text">
       <div>
@@ -74,6 +86,7 @@
   <!--FEATURED PRODUCTS-->
   <section class="section">
     <h1 class="title">Featured Styles</h1>
+    <small class="info">Scroll to the right for more!</small>
     <div class="section-container">
       <div class="card">
         <div class="card-img">
@@ -88,7 +101,7 @@
          <span><strong>N12,000</strong></span>
          </div>
          <div class="action">
-           <span><a href=""><i class="fa fa-plus"></i></a></span>
+           <span><a href="" id="addToCart"><i class="fa fa-plus"></i></a></span>
          </div>
        </div>
       </div>
@@ -132,7 +145,7 @@
             <div class="card">
               <div class="card-img">
                 <img src="images (22).jpeg" alt="images/images (20).jpeg">
-              </div>
+              </div
               <div class="card-content">
                 <div>
                   <h3>Best Suit</h3>
@@ -334,7 +347,7 @@
         <img src="images (3).jpeg" alt="">
       </div>
       <div class="card">
-        <img src="profile-image.jpg" alt="">
+        <img src="images/profile-image.jpg" alt="">
       </div>
       <div class="card">
         <img src="images (22).jpeg" alt="">
