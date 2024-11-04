@@ -430,7 +430,18 @@ i.fa-user, fa-shopping-cart {
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
+/* Social Media Icon Styling */
+.social-icon {
+    color: #ccc;
+        font-size: 24px;
+            margin-right: 15px;
+                transition: color 0.3s ease;
+                    text-decoration: none;
+                    }
 
+                    .social-icon:hover {
+                        color: #ffc107; /* Hover color for icons */
+                        }
 .footer-section .social a img:hover {
     transform: scale(1.1);
 }
